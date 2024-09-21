@@ -1,0 +1,260 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links .cta {
+    background-color: #ff4b2b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Hero Sections */
+.hero {
+    background: url('Pictures/2r4z.gif') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.industry-hero {
+    background: url('industry-background.jpg') no-repeat center center/cover;
+}
+
+.services-hero {
+    background: url('services-background.jpg') no-repeat center center/cover;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #ff4b2b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff6b3b;
+}
+
+/* Industry Overview */
+.industry-overview {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #333;
+}
+
+.industry-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.industry-overview p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Industry Specializations */
+.industry-specializations {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #444;
+}
+
+.specialization-item {
+    background-color: #222;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.specialization-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Services Overview */
+.services-overview {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #333;
+}
+
+.services-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services-overview p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Service Categories */
+.service-categories {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #444;
+}
+
+.service-item {
+    background-color: #222;
+    padding: 20px;
+    width: 23%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item .learn-more {
+    margin-top: 10px;
+    color: #ff4b2b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 50px 20px;
+    background-color: #ff4b2b;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-section .cta-button {
+    background-color: #fff;
+    color: #ff4b2b;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-section .cta-button:hover {
+    background-color: #ff6b3b;
+    color: #fff;
+}
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #333;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #444;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #222;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
