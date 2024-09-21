@@ -194,6 +194,7 @@ body {
     background-color: #ff6b3b;
     color: #fff;
 }
+
 /* About Section */
 .about {
     padding: 50px 20px;
@@ -257,4 +258,74 @@ footer .social-links a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
+}
+
+/* Login Form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+}
+
+.login-box {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff4b2b;
+}
+
+.login-box label {
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.login-box input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #ff4b2b;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-box input[type="submit"]:hover {
+    background-color: #ff6b3b;
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 768px) {
+    .industry-specializations,
+    .service-categories {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .specialization-item,
+    .service-item {
+        width: 100%;
+    }
 }
