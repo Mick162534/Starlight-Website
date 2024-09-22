@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlight Corporation Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script defer src="dashboard.js"></script> <!-- Link to JavaScript file -->
+</head>
+<body>
+
+    <!-- Main Navigation Bar (Top) -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Starlight Corporation</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="industry.html">Industry</a></li>
+                <li><a href="#warfare">Warfare</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="Login.html" class="cta">Member Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- User Info & Flash News Section -->
+    <section class="top-info-bar">
+        <div class="user-info">
+            <p>Username: <span id="username">EVE Pilot</span></p>
+            <p>ISK Balance: <span id="isk-balance">10,000,000 ISK</span></p>
+        </div>
+        <div class="flash-news">
+            <h3>Flash News</h3>
+            <p>Latest fleet operation scheduled for 18:00 EVE time. Join now!</p>
+        </div>
+    </section>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-layout">
+        <!-- Sidebar Navigation (left) -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" data-page="dashboard_home">Dashboard Home</a></li>
+                <li><a href="#" data-page="fleet_operations">Fleet Operations</a></li>
+                <li><a href="#" data-page="industry">Industry Tools</a></li>
+                <li><a href="#" data-page="market">Market</a></li>
+                <li><a href="#" data-page="eve_authenticator">EVE Authenticator</a></li>
+                <li><a href="#" data-page="profile">Profile</a></li>
+                <li><a href="#" data-page="settings">Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content" id="main-content">
+            <!-- Default content: dashboard home -->
+            <h2>Welcome to the Dashboard</h2>
+            <p>Select an option from the sidebar to view more information.</p>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© Starlight Corporation, All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
