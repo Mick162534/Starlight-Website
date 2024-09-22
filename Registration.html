@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Starlight Corporation</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="industry.html">Industry</a></li>
+                <li><a href="#warfare">Warfare</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="Login.html" class="cta">Member Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="login-container">
         <h2>Register</h2>
         <form action="register.php" method="POST">
@@ -19,7 +37,7 @@
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit" class="cta-button">Register</button>
-            <p>Already have an account? <a href="login.php">Login</a></p>
+            <p>Already have an account? <a href="Login.html">Login</a></p>
         </form>
     </div>
 </body>

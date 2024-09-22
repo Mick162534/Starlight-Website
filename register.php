@@ -1,12 +1,25 @@
 <?php
+// Enable error reporting for debugging
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Database connection details
 $host = 'localhost';
 $db = 'starlight_portal';
 $user = 'root';
-$pass = 'mick1423'; // Your MySQL root password
+$pass = ''; // Your MySQL root password
 
+// Establish database connection
 $conn = new mysqli($host, $user, $pass, $db);
 
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Get form input
     $username = $_POST['username'];
     $password = $_POST['password'];
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
@@ -19,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $stmt->get_result();
 
     if ($result->num_rows === 0) {
-        // Insert new user
+        // Username is unique, insert the new user
         $insertQuery = "INSERT INTO users (username, password) VALUES (?, ?)";
         $stmt = $conn->prepare($insertQuery);
         $stmt->bind_param("ss", $username, $hashedPassword);
@@ -31,5 +44,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo "Username already exists.";
     }
+
+    // Close the statement
+    $stmt->close();
 }
+
+// Close the database connection
+$conn->close();
 ?>
